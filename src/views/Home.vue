@@ -13,7 +13,7 @@ const { result } = storeToRefs(store);
 <template>
   <div class="home-container">
     <div class="header">
-      <h1>牛牛计算器</h1>
+      <h1>牛牛牌型计算器</h1>
       <router-link to="/rules" class="rules-link">规则说明</router-link>
     </div>
     
