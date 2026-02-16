@@ -173,13 +173,40 @@ const resultClass = computed(() => {
 
 // Responsive
 @media (max-width: 480px) {
+  .result-display {
+    padding: 20px;
+  }
+
+  .result-title {
+    font-size: 32px;
+  }
+
   .result-cards {
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+  }
+  
+  .card-group {
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  :deep(.card-item) {
+    width: 45px;
+    height: 63px;
+    
+    .card-center {
+      font-size: 20px;
+    }
+    
+    .card-corner {
+      font-size: 10px;
+    }
   }
   
   .plus-sign {
     transform: rotate(90deg);
+    margin: 4px 0;
   }
 }
 </style>
