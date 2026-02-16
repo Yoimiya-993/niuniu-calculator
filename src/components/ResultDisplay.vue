@@ -175,16 +175,13 @@ const resultClass = computed(() => {
 
 // Responsive
 @media (max-width: 480px) {
-  .result-display {
-    padding: 24px 16px;
-  }
-
   .result-cards {
-    gap: 12px;
+    flex-direction: column;
+    gap: 16px;
   }
   
-  .result-title {
-    font-size: 32px;
+  .plus-sign {
+    transform: rotate(90deg);
   }
 }
 </style>
