@@ -57,12 +57,18 @@ const { result } = storeToRefs(store);
   padding: 0 10px;
   
   h1 {
-    font-size: 32px;
+    font-size: 24px;
     margin: 0;
     color: #ffd700;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     font-weight: 900;
     letter-spacing: 1px;
+  }
+  
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 32px;
+    }
   }
   
   .rules-link {
